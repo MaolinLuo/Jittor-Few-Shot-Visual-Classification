@@ -1,0 +1,7 @@
+**/__pycache__/
+/output/
+/scripts/
+ViT-B-32.pkl
+lvvit_l-150M-512-86.4.pkl
+lvvit_l-150M-512-86.4.pth.tar
+/.vscode/

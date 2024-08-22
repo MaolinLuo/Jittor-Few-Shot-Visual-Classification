@@ -1,0 +1,39 @@
+backbone: "IN1K-LV-ViT"
+resolution: 512
+
+output_dir: "jittor4_in1k_lv_vit"
+classes_path: "datasets/Jittor4/classes_dog.txt"
+train_path: "datasets/Jittor4/train_label_dog.txt"
+validate_path: "datasets/Jittor4/val_dog.txt"
+print_freq: 10
+
+num_epochs: 5
+batch_size: 16
+micro_batch_size: 16
+lr: 0.01
+weight_decay: 5e-4
+momentum: 0.9
+loss_type: "CE"
+classifier: "CosineClassifier"
+
+bias_tuning: False
+ln_tuning: False
+vpt_shallow: False
+vpt_deep: False
+adapter: False
+adaptformer: True
+lora: False
+ssf_attn: False
+ssf_mlp: False
+ssf_ln: False
+adapter_dim: 16
+
+validate_ensemble: True
+ensemble_mode: "fivecrop"
+expand: 24
+
+zero_shot: False
+train: True
+validate_training_set: True
+validate: False
+test: False

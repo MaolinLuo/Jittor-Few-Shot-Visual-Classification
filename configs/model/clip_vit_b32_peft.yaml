@@ -1,0 +1,42 @@
+backbone: "CLIP-ViT-B-32.pkl"
+resolution: 224
+
+output_dir: "jittor4_clip_vit_b32_peft"
+classes_path: "./datasets/Jittor4/classes.txt"
+train_path: "datasets/Jittor4/train_label.txt"
+validate_path: "datasets/Jittor4/val.txt"
+print_freq: 10
+
+num_epochs: 20
+batch_size: 128
+micro_batch_size: 128
+lr: 0.01
+weight_decay: 5e-4
+momentum: 0.9
+loss_type: "CE"
+classifier: "CosineClassifier"
+
+bias_tuning: False
+ln_tuning: False
+vpt_shallow: False
+vpt_deep: False
+adapter: False
+adaptformer: True
+lora: False
+ssf_attn: False
+ssf_mlp: False
+ssf_ln: False
+adapter_dim: 32
+
+validate_ensemble: True
+ensemble_mode: "tencrop"
+expand: 24
+
+zero_shot: False
+train: True
+validate_training_set: True
+validate: False
+test: False
+
+mixup: True
+alpha: 0.2

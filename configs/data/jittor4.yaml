@@ -1,0 +1,3 @@
+dataset: "Jittor4"
+root: "YourDatasetPath"
+test_path: "TestSetB/"

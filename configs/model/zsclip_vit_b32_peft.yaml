@@ -1,0 +1,17 @@
+backbone: "CLIP-ViT-B-32.pkl"
+resolution: 224
+
+output_dir: null
+classes_path: "./datasets/Jittor4/classes_b.txt"
+train_path: "datasets/Jittor4/train_label.txt"
+validate_path: "datasets/Jittor4/val.txt"
+
+validate_ensemble: True
+ensemble_mode: "tencrop"
+expand: 24
+
+zero_shot: True
+train: False
+validate_training_set: True
+validate: False
+test: False
